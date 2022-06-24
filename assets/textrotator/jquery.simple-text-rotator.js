@@ -155,8 +155,6 @@
             el.fadeOut(settings.speed, function() {
               index = $.inArray(el.text(), array)
               if((index + 1) == array.length) index = -1
-              console.log("fade");
-              console.log(array[index + 1]);
               el.text(array[index + 1]).fadeIn(settings.speed);
             });
           break;
